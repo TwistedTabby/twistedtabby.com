@@ -92,6 +92,9 @@ h1 {
 .link-card:hover .icon-fallout76 {
     animation: spin 1.5s ease-in-out;
 }
+.link-card:hover .icon-reddit {
+    color: #FF4500; /* Reddit brand color */
+}
 
 @keyframes spin {
     from {
