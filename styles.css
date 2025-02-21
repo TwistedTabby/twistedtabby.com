@@ -96,6 +96,10 @@ h1 {
     color: #FF4500; /* Reddit brand color */
 }
 
+.link-card:hover .icon-discord {
+    color: #5865F2; /* Discord brand color */
+}
+
 @keyframes spin {
     from {
         transform: rotate(0deg);
@@ -104,7 +108,6 @@ h1 {
         transform: rotate(360deg);
     }
 }
-
 
 .link-card span {
     font-size: 1.1rem;
