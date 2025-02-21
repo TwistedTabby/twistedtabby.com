@@ -1,0 +1,115 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    max-width: 600px;
+    width: 90%;
+    padding: 2rem;
+}
+
+.profile {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.profile-pic {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    margin-bottom: 1rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    color: #333;
+    margin-bottom: 0.5rem;
+}
+
+.bio {
+    color: #666;
+    margin-bottom: 2rem;
+}
+
+.links {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.link-card {
+    background: white;
+    padding: 1rem;
+    border-radius: 10px;
+    text-decoration: none;
+    color: #333;
+    display: flex;
+    align-items: center;
+    transition: transform 0.2s, box-shadow 0.2s;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.link-card:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+}
+
+.link-card i {
+    font-size: 1.5rem;
+    margin-right: 2rem;
+    width: 32px;
+    text-align: center;
+}
+
+.link-card img.icon,
+.link-card svg.icon {
+    margin-right: 1.25rem;
+}
+
+.link-card:hover .icon-youtube {
+    color: #FF0000; /* YouTube brand color */
+}
+
+.link-card:hover .icon-bluesky {
+    color: #00acee; /* BlueSky brand color */
+}
+
+.link-card:hover .icon-github {
+    color: #333; /* GitHub brand color */
+}
+
+.link-card:hover .icon-fallout76 {
+    animation: spin 1.5s ease-in-out;
+}
+
+@keyframes spin {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+
+.link-card span {
+    font-size: 1.1rem;
+}
+
+@media (max-width: 480px) {
+    .container {
+        width: 95%;
+        padding: 1rem;
+    }
+} 
